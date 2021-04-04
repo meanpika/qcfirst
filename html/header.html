@@ -1,3 +1,11 @@
+   <!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="styleex.css">
+      <script src="script.js" defer></script>
+      <title>Responsive Navbar</title>
+    </head>
+    <body>
     <div class="header-flexbox">
         <!-- adapted from [3/30/2021] https://www.youtube.com/watch?v=IvQAfNWnSYc&ab_channel=OnlineTutorials -->
         <!-- nav -->
@@ -44,22 +52,20 @@
 
         <!-- Adapted from [4/1/2021] https://mdbootstrap.com/docs/b4/jquery/navigation/hamburger-menu/ -->
         <!--Navbar-->
-        <nav class="navbar navbar-light navbar-1 white">
+       <nav class="navbar">
+        <div class="brand-title">QCFirst</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
 
-            <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">Qc First</a>
-
-            <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
-                    aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent15">
-
-                <!-- Links -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="homepage-html.html">Home <span class="sr-only">(current)</span></a>
+        </a>
+        <div class="navbar-links">
+          <li class="nav-item">
+                        <a class="nav-link" href="homepage-html.html">Home</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login-page-html.html">Login Page</a>
@@ -71,14 +77,13 @@
                         <a class="nav-link" href="forgot-password-html.html">Forgot Password</a>
                     </li>
                 </ul>
-                <!-- Links -->
-
-            </div>
-            <!-- Collapsible content -->
-
-        </nav>
+        </div>
+      </nav>
         <!--/.Navbar-->
         <!-- end of adaption -->
+
+</body>
+</html>
 
 
 

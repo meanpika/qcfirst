@@ -1,32 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <link rel="stylesheet" href="background_styles.css">
-      <link rel="stylesheet" href="styleex.css">
-      <script src="script.js" defer></script>
-      <title>Responsive Navbar</title>
-    </head>
-    <body>
-      <nav class="navbar">
-        <div class="brand-title">QCFirst</div>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="CreateClass.html">Create Class</a></li>
-            <li><a href="DeleteClass.html">Delete Class</a></li>
-            <li><a href="instructor-course-dictionary-html.html">Course Directory</a></li>
-            <li><a href="ClassDeadline.html">Class Deadline</a></li>
-            <li><a href="change-password-instructor.html">Change Password</a></li>
-            <li><a href="#">Sign Out</a></li>
-          </ul>
+<html lang="en">
+  
+<head>
+    <title>Mobile Navigation Bar</title>
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="../css/styleex.css">
+
+</head>
+  
+<body>
+  
+    <div class="navbar">
+          <div class="topnav">
+            <a href="#" class="">QCFirst</a>
+            <div id="option">
+                <a href="AddClass.html">Add Class</a>
+                <a href="DropClass.html">Drop Class</a>
+                <a href="student-course-dictionary-html.html">Course Directory</a>
+                <a href="ClassDeadline.html">Class Deadline</a>
+                <a href="change-password-student.html">Change Password</a>
+                <a href="#">Sign Out</a>
+  
+            </div>
+
+            <!-- adapted from [4/1/2021]: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+  
+            <a href="javascript:void(0);" class="icon" 
+                    onclick="qcfirst()">
+  
+                <i onclick="myFunction(this)" 
+                        class="fa fa-bars">
+                </i>
+            </a>
         </div>
-      </nav>
-    </body>
+    </div>
+  
+    <script>
+        function qcfirst() {
+            var x = document.getElementById("option");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+  
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("fa fa-bars");
+        }
+    </script>
+</body>
+  
 </html>
